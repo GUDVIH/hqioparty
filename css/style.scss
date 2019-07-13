@@ -1,0 +1,123 @@
+
+@font-face {
+    src: url('/css/Face.ttf');
+    font-family: 'Face';
+}
+
+@font-face {
+    src: url('/css/Belly.ttf');
+    font-family: 'Belly';
+}
+
+
+/*-----------------------------*/
+.container{
+    max-width: 1930px;
+}
+.allImg{
+    position: absolute;
+    top: 0;
+    width: 1750px;
+    height: 875px;
+}
+main{
+    z-index: 100;
+    position: relative;
+    padding-top: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /*margin: 100px auto 0;*/
+}
+.test{
+    height: 1100px;
+    background: rgba(253,200,23,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(253,200,23,1) 0%, rgba(199,8,19,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(253,200,23,1)), color-stop(100%, rgba(199,8,19,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(253,200,23,1) 0%, rgba(199,8,19,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(253,200,23,1) 0%, rgba(199,8,19,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(253,200,23,1) 0%, rgba(199,8,19,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(253,200,23,1) 0%, rgba(199,8,19,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdc817', endColorstr='#c70813', GradientType=1 );
+}
+
+.question {
+    width: 50%;
+    font-size: 40px;
+    font-family: 'Face';
+    color: #000000;
+}
+.answer {
+    margin-top: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.answer li {
+    width: 40%;
+    position: relative;
+    padding: 0 0 0 35px;
+    cursor: pointer;
+    font-size: 4rem;
+    font-family: 'Belly';
+    color: #ffffff;
+}
+.answer li:before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+    border: 8px solid #000000;
+    border-radius: 50%;
+    background: inherit;
+}
+.answer li:after{
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #9FD468;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+    opacity: 0;
+    transition: .2s;
+}
+.result {
+    padding: 30px 0;
+    font-size: 18px;
+    line-height: 150%;
+}
+.result-img {
+    max-width: 600px;
+    display: block;
+    margin: 10px auto;
+}
+.reload-button {
+    display: block;
+    margin: 20px auto;
+    background: #c0c0c0;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 25px;
+    min-width: 200px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+.reload-button:hover {
+    background: #acacac;
+}
